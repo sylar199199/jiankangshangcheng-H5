@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1.2, user-scalable=0" name="viewport"/>
+  <!--<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">-->
+  <title></title>
+  <link rel="icon" sizes="any" href="/static/kunlunicon.png" type="image/png">
+  <script src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+  <!--<script src="/static/flexible.debug.js" type="text/javascript" charset="utf-8"></script>-->
+  <!--<script src="/static/flexible_css.debug.js" type="text/javascript" charset="utf-8"></script>-->
+  <!--<script src="/static/exif.js" type="text/javascript" charset="utf-8"></script>-->
+  <script src="/static/exif.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="/static/base.css">
+  <link rel="stylesheet" type="text/css" href="/static/iconfont.css">
+  <% if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'test') { %>
+  <% for(var css of htmlWebpackPlugin.options.css) { %>
+  <link href="<%=css%>" rel="preload" as="style">
+  <link rel="stylesheet" href="<%=css%>" as="style">
+  <% } %>
+  <% } %>
+  <% for (var i in htmlWebpackPlugin.options.js&&htmlWebpackPlugin.options.js) { %>
+  <script src="<%= htmlWebpackPlugin.options.js[i] %>"></script>
+  <% } %>
+  <script type="text/javascript">
+    //兼容怪异手机修改webview默认font大小导致的rem与fontsize不对等的情况
+    docElementFontSize = document.documentElement.style.fontSize;
+    //html 最终的 font-size
+    finalDocElementFontSize = window.getComputedStyle(window.document.documentElement).getPropertyValue("font-size");
+    (function () {
+      //计算最终html font-size
+
+      if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
+        handleFontSize();
+      } else {
+        if (document.addEventListener) {
+          document.addEventListener("WeixinJSBridgeReady", handleFontSize, false);
+        } else if (document.attachEvent) {
+          document.attachEvent("WeixinJSBridgeReady", handleFontSize);
+          document.attachEvent("onWeixinJSBridgeReady", handleFontSize);
+        }
+      }
+      function handleFontSize() {
+        // 设置网页字体为默认大小
+        WeixinJSBridge.invoke('setFontSizeCallback', {'fontSize': 16 + 'px'});
+        // 重写设置网页字体大小的事件
+        WeixinJSBridge.on('menu:setfont', function () {
+          WeixinJSBridge.invoke('setFontSizeCallback', {'fontSize': 16 + 'px'});
+        });
+      }
+      var root = window.document.documentElement;
+      var fontSize = parseFloat(root.style.fontSize);
+      var finalFontSize = parseFloat(window.getComputedStyle(root).getPropertyValue("font-size"));
+      if (finalFontSize === fontSize) return;
+      root.style.fontSize = fontSize + (fontSize - finalFontSize) + "px";
+    })()
+
+
+    /* if (typeof window.onload === 'function') {
+       var oldFun = window.onload;
+       window.onload = function () {
+         oldFun();
+         modifileRootRem();
+       }
+     } else {
+       window.onload = modifileRootRem;
+     }*/
+  </script>
+
+</head>
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+
+</html>

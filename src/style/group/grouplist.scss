@@ -1,0 +1,80 @@
+.container {
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  .huodongtou{
+    background: url("../../assets/image/group/huodongtou.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 160rem/$baseFontSize;
+    padding-top: 40rem/$baseFontSize;
+    .bcend{
+      width: 475rem/$baseFontSize;
+      height: 60rem/$baseFontSize;
+      position: relative;
+      .neirong{
+        position: absolute;
+        left: 50%;
+        margin-left: -214rem/$baseFontSize;
+        top: 50%;
+        margin-top: -20rem/$baseFontSize;
+      }
+      .enbutton{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 30rem/$baseFontSize;
+        background: #ae362c;
+        opacity: 0.5;
+      }
+    }
+    .padluan{
+      padding-left: 50rem/$baseFontSize;
+      padding-right: 30rem/$baseFontSize;
+      box-sizing: border-box;
+    }
+    .end{
+      display: flex;
+      align-items: flex-end;
+    }
+
+  }
+  .contbox{
+    padding-bottom: 90rem/$baseFontSize;
+  }
+  .daojishi{
+
+  }
+  .listBox {
+    margin-top: 30rem/$baseFontSize;
+    .listBoxLeft {
+      position: relative;
+    }
+    .listBoxRight{
+      flex: 1;
+      margin-left: 28rem/$baseFontSize;
+      padding-bottom: 30rem/$baseFontSize;
+      min-height: 220rem/$baseFontSize;
+      border-bottom: 1rem/$baseFontSize solid #dcdcdc;
+      .yipin{
+        height: 36rem/$baseFontSize;
+        line-height: 36rem/$baseFontSize;
+        border: 1px solid #ffe7e7;
+        padding: 0 10rem/$baseFontSize;
+        border-radius: 6rem/$baseFontSize;
+      }
+      .high-price{
+        margin-left: 10rem/$baseFontSize;
+      }
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      .alignBottom{
+        align-items: flex-end;
+      }
+    }
+  }
+}

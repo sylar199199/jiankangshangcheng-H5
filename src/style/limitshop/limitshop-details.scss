@@ -1,0 +1,333 @@
+.container {
+  display: block;
+  background: #ffffff;
+  overflow-x: hidden;
+  .flexContent {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .product-detail-box {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    height: 200px;
+  }
+
+
+
+  .activite-explain {
+    width: 100%;
+    height: 120rem/$baseFontSize;
+    background: url("../../assets/image/rush-buy.png") no-repeat top / cover;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%;
+      color: #fff;
+      margin-left: 21rem/$baseFontSize;
+
+      .welfare-explain {
+        margin-top: -10rem/$baseFontSize;
+        font-size: 28rem/$baseFontSize;
+
+        .big-font {
+          font-size: 55rem/$baseFontSize;
+        }
+
+        .small-font {
+          margin-left: 10rem/$baseFontSize;
+          color: rgb(247, 199, 202);
+          text-decoration: line-through;
+        }
+      }
+
+      .welfare-num {
+        display: flex;
+        .new-progress{
+          width: 2.8rem;
+          height: 100%;
+          position: relative;
+          .pro-bc{
+            width: 100%;
+            background: rgb(250, 214, 216);
+            border-radius: 12rem/$baseFontSize;
+            height: 20rem/$baseFontSize;
+            overflow: hidden;
+            position: absolute;
+            top: 50%;
+            margin-top: -12px;
+            .pro-run{
+              background: #fff;
+              border-radius: 12rem/$baseFontSize;
+              height: 100%;
+            }
+          }
+        }
+        .surplus-num {
+          height: 100%;
+          width: 100%;
+          line-height: 8px;
+          color: #eb6c6b;
+          position: absolute;
+          top: 50%;
+          margin-top: -5px;
+          left:0;
+          font-size: 16ren/$baseFontSize;
+          text-align: center;
+        }
+      }
+    }
+
+    .right {
+      padding-top: 10rem/$baseFontSize;
+      padding-bottom: 10rem/$baseFontSize;
+      padding-right: 20rem/$baseFontSize;
+      .timeword {
+        width: 100%;
+        margin-left: 55rem/$baseFontSize;
+        display: flex;
+        color: #eb6c6b;
+        height: 30rem/$baseFontSize;
+        line-height: 30rem/$baseFontSize;
+        font-size: 26rem/$baseFontSize;
+        .img {
+          width: 26rem/$baseFontSize;
+          height: 23rem/$baseFontSize;
+          margin-right: 5rem/$baseFontSize;
+          line-height: 38rem/$baseFontSize;
+        }
+      }
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .draw-time {
+        margin-right: 10rem/$baseFontSize;
+        .countdown-style {
+          display: inline-block;
+          padding: 0 5rem/$baseFontSize;
+          height: 39rem/$baseFontSize;
+          background: rgb(51, 51, 51);
+          color: #fff;
+          text-align: center;
+          line-height: 39rem/$baseFontSize;
+          font-size: 26rem/$baseFontSize;
+          border-radius: 5rem/$baseFontSize;
+          min-width: 30rem/$baseFontSize;
+        }
+
+        .countdown-over {
+          background: #a1a1a1;
+        }
+      }
+    }
+  }
+
+  .over {
+    background: url("../../assets/image/details/activite-over.png") no-repeat top / cover;
+  }
+
+  .condition {
+    width: 100%;
+    height: 90rem/$baseFontSize;
+    padding-left: 30rem/$baseFontSize;
+    margin-top: 38rem/$baseFontSize;
+    padding-bottom: 40rem/$baseFontSize;
+
+    .condition-name {
+      font-size: 37rem/$baseFontSize;
+      font-weight: bold;
+    }
+
+    .condition-explain {
+      font-size: 26rem/$baseFontSize;
+      color: #979797;
+    }
+  }
+
+  .product-package-box {
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 0 30rem/$baseFontSize;
+
+    .guige {
+      .mint-cell-wrapper {
+        background-image: none !important;
+        padding: 0 !important;
+        border-top: 1px solid #f0f0f0;
+        .mint-cell-title {
+          width: 45px;
+          font-size: 26rem/$baseFontSize;
+        }
+
+        .mint-cell-text {
+          color: #979797;
+          font-size: 26rem/$baseFontSize;
+        }
+
+        .mint-cell-value {
+          color: #1e1e1e;
+          font-size: 26rem/$baseFontSize;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .no-bottom {
+  }
+
+  .joinnum {
+    width: 100%;
+    background: #fff;
+    height: 148rem/$baseFontSize;
+    padding: 30rem/$baseFontSize;
+    box-sizing: border-box;
+
+    .join-details {
+      display: flex;
+      justify-content: space-around;
+      background: #eef8f7;
+      width: 100%;
+      height: 100%;
+      border-radius: 15rem/$baseFontSize;
+      position: relative;
+
+      .img-div {
+        position: absolute;
+        top: 50%;
+        left: 27rem/$baseFontSize;
+        margin-top: -33rem/$baseFontSize;
+
+        img {
+          width: 66rem/$baseFontSize;
+          height: 66rem/$baseFontSize;
+          border-radius: 50%;
+          margin-left: -12rem/$baseFontSize;
+        }
+      }
+
+      .jionpeople {
+        position: absolute;
+        right: 25rem/$baseFontSize;
+        color: #19b39d;
+        line-height: 88rem/$baseFontSize;
+        font-size: 29rem/$baseFontSize;
+        text-align: center;
+      }
+    }
+  }
+
+  .goods-details {
+    width: 100%;
+    height: 350rem/$baseFontSize;
+  }
+
+  .bottom {
+    width: 100%;
+    height: 110rem/$baseFontSize;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    padding: 0 20rem/$baseFontSize;
+    display: flex;
+    box-sizing: border-box;
+    border-top: 1px solid #F3F3F3;
+    align-items: center;
+    .bottomleft {
+      display: flex;
+      justify-content: space-between;
+      height: 75%;
+      flex: 1;
+      margin-right: 50rem/$baseFontSize;
+      .shouye {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+      }
+      .bottomword {
+        text-align: center;
+        font-size: 23rem/$baseFontSize;
+        color: #353535;
+      }
+    }
+    .bottomright {
+      width: 380rem/$baseFontSize;
+      .start {
+        width: 100%;
+        height: 80rem/$baseFontSize;
+        text-align: center;
+        border-radius: 46rem/$baseFontSize;
+        overflow: hidden;
+        color: white;
+        font-size: 32rem/$baseFontSize;
+        display: flex;
+        font-weight: bold;
+        .commonbuttom{
+          width: 100%;
+          height: 100%;
+          line-height: 80rem/$baseFontSize;
+          background: #eb6c6b;
+        }
+        .mashangqiang {
+          background: #eb6c6b;
+        }
+        .yishouqin {
+          background: #a1a1a1;
+        }
+        .yijieshu{
+          background: #a1a1a1;
+        }
+        .weikaishi{
+          width: 100%;
+          border-radius: 46rem/$baseFontSize;
+          font-size: 32rem/$baseFontSize;
+          color: #999999;
+          background: #fff;
+          height: 80rem/$baseFontSize;
+          line-height: 80/$baseFontSize;
+          border: #999999 solid 1px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.selecte-line {
+  display: inline-block;
+  height: 6rem/$baseFontSize;
+  width: 84rem/$baseFontSize;
+  position: absolute;
+  bottom: 20rem/$baseFontSize;
+  left: 50%;
+  margin-left: -42rem/$baseFontSize;
+  background: #eb6c6b;
+  border-radius: 3px;
+}
+

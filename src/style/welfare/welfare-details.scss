@@ -1,0 +1,1224 @@
+.content{
+  height: 100%;
+}
+.container {
+  .flexContent {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background: #fff;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .product-detail-box {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    height: 200px;
+  }
+
+  display: block;
+  background: rgb(248, 248, 248);
+  overflow-x: hidden;
+
+  .activite-explain {
+    width: 100%;
+    height: 100rem/$baseFontSize;
+    padding-bottom: 10rem/$baseFontSize;
+    padding-top: 10rem/$baseFontSize;
+    background: url("../../assets/image/rush-buy.png") no-repeat top / cover;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%;
+      color: #fff;
+      margin-left: 30rem/$baseFontSize;
+
+      .welfare-explain {
+        font-size: 37rem/$baseFontSize;
+        font-weight: bold;
+        margin-top: 5rem/$baseFontSize;
+      }
+
+      .welfare-num {
+        font-size: 30rem/$baseFontSize;
+        margin-bottom: 6rem/$baseFontSize;
+      }
+    }
+
+    .right {
+      padding-right: 20rem/$baseFontSize;
+      .timeword {
+        display: flex;
+        color: #fd6266;
+        height: 30rem/$baseFontSize;
+        line-height: 30rem/$baseFontSize;
+        .img {
+          width: 26rem/$baseFontSize;
+          height: 23rem/$baseFontSize;
+          margin-right: 5rem/$baseFontSize;
+          line-height: 38rem/$baseFontSize;
+          margin-left: 18rem/$baseFontSize;
+        }
+        .acword{
+          font-size: 26rem/$baseFontSize;
+        }
+      }
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .draw-time {
+        margin-right: 10rem/$baseFontSize;
+
+        .countdown-style {
+          display: inline-block;
+          padding: 0 5rem/$baseFontSize;
+          height: 39rem/$baseFontSize;
+          background: rgb(51, 51, 51);
+          color: #fff;
+          text-align: center;
+          line-height: 39rem/$baseFontSize;
+          font-size: 26rem/$baseFontSize;
+          border-radius: 5rem/$baseFontSize;
+          min-width: 30rem/$baseFontSize;
+        }
+
+        .countdown-over {
+          background: #a1a1a1;
+        }
+      }
+    }
+  }
+
+  .over {
+    background: url("../../assets/image/details/activite-over.png") no-repeat top / cover;
+  }
+
+  .condition {
+    width: 100%;
+    height: 90rem/$baseFontSize;
+    padding-left: 30rem/$baseFontSize;
+    margin-top: 38rem/$baseFontSize;
+    padding-bottom: 40rem/$baseFontSize;
+
+    .condition-name {
+      font-weight: bold;
+      font-size: 37rem/$baseFontSize;
+    }
+
+    .condition-explain {
+      margin-top: 10rem/$baseFontSize;
+      font-size: 26rem/$baseFontSize;
+      span {
+        color: #fd6266;
+      }
+    }
+  }
+
+  .cut {
+    width: 90%;
+    height: 1px;
+    background: rgb(240, 240, 240);
+    margin: 0 auto;
+    margin-top: 5rem/$baseFontSize;
+  }
+
+  .no-bottom {
+    border-bottom: 25rem/$baseFontSize solid #f8f8f8;
+  }
+
+
+  .goods-details {
+    width: 100%;
+    height: 350rem/$baseFontSize;
+  }
+
+
+}
+
+.selecte-line {
+  display: inline-block;
+  height: 6rem/$baseFontSize;
+  width: 84rem/$baseFontSize;
+  position: absolute;
+  bottom: 20rem/$baseFontSize;
+  left: 50%;
+  margin-left: -42rem/$baseFontSize;
+  background: #fd6266;
+  border-radius: 3px;
+}
+
+
+.over-button {
+  position: absolute;
+  top: 50%;
+  right: 25rem/$baseFontSize;
+  margin-top: -35rem/$baseFontSize;
+  height: 70rem/$baseFontSize;
+  line-height: 70rem/$baseFontSize;
+  width: 460rem/$baseFontSize;
+  border-radius: 45rem/$baseFontSize;
+  color: #fff;
+  font-weight: bold;
+  background: #a1a1a1;
+}
+
+
+
+.img-div {
+  text-align: center;
+  margin-top: 20rem/$baseFontSize;
+  img {
+    border-radius: 50%;
+    border: 3rem/$baseFontSize solid #fff;
+    width: 60rem/$baseFontSize;
+    height: 60rem/$baseFontSize;
+    margin-left: -12rem/$baseFontSize;
+  }
+}
+
+.joinnumCommon {
+  width: 100%;
+  background: #fff;
+  padding: 0 30rem/$baseFontSize;
+  box-sizing: border-box;
+  margin-top: 20rem/$baseFontSize;
+
+  .join-details {
+    width: 691rem/$baseFontSize;
+    height: 134rem/$baseFontSize;
+    border-radius: 15rem/$baseFontSize;
+    padding-top: 4rem/$baseFontSize;
+    padding-bottom: 10rem/$baseFontSize;
+    position: relative;
+    text-align: center;
+    font-size: 24rem/$baseFontSize;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .jionpeople {
+      margin-bottom: 10rem/$baseFontSize;
+    }
+
+    .jionpeopleed {
+      margin-bottom: 10rem/$baseFontSize;
+    }
+  }
+}
+
+.nojoinnum {
+  .join-details {
+    background: url("../../assets/image/welfare/queren.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .jionpeople {
+      color: #989898;
+    }
+
+    .jionpeopleed {
+      color: #989898;
+    }
+  }
+}
+
+.joinnum {
+  .join-details {
+    background: url("../../assets/image/welfare/noqueren.png") no-repeat;
+    background-size: cover;
+    background-position: right/bottom;
+
+    .jionpeople {
+      color: #989898;
+    }
+
+    .jionpeopleed {
+      color: #54B09E;
+    }
+  }
+}
+
+.waitjoinnum {
+  .join-details {
+    background: url("../../assets/image/welfare/waitqueren.png") no-repeat;
+    background-size: cover;
+    background-position: right/bottom;
+
+    .jionpeople {
+      color: #fd6266;
+    }
+  }
+}
+
+
+.download-tip {
+  position: absolute;
+  right: 67rem/$baseFontSize;
+  top: 20rem/$baseFontSize;
+  width: 253rem/$baseFontSize;
+  height: 330rem/$baseFontSize;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.send-it {
+  margin-top: 267rem/$baseFontSize;
+  color: #fff;
+  font-size: 33rem/$baseFontSize;
+  margin-left: 230rem/$baseFontSize;
+}
+
+.tip-zhong {
+  color: #F9E368;
+  font-size: 33rem/$baseFontSize;
+  margin-left: 230rem/$baseFontSize;
+}
+
+.i-c {
+  margin: 0 auto;
+  width: 375rem/$baseFontSize;
+  border: 2px solid #FFFFFF;
+  border-radius: 46px;
+  height: 90rem/$baseFontSize;
+  margin-top: 70rem/$baseFontSize;
+  color: #fff;
+  font-size: 33rem/$baseFontSize;
+  text-align: center;
+  line-height: 90rem/$baseFontSize;
+}
+.address {
+  margin-top: 26rem/$baseFontSize;
+
+  padding: 65rem/$baseFontSize 60rem/$baseFontSize;
+  padding-bottom: 90rem/$baseFontSize;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  position: relative;
+
+  .congratulations {
+    font-size: 36rem/$baseFontSize;
+    color: #fd6266;
+    text-align: center;
+  }
+
+  .label {
+    font-size: 30rem;
+  }
+
+
+  .input {
+    width: 427rem/$baseFontSize;
+    height: 80rem/$baseFontSize;
+    border-radius: 3px;
+    border: #dcdcdc solid 1px;
+  }
+
+  .sub-button {
+    width: 100%;
+    text-align: center;
+    margin-top: 40rem/$baseFontSize;
+
+    .vanbutton {
+      margin: 0 auto;
+      background: #1db29d;
+      border-radius: 45rem/$baseFontSize;
+      border: 0;
+      color: #fff;
+      font-size: 28rem/$baseFontSize;
+      width: 460rem/$baseFontSize;
+      height: 70rem/$baseFontSize;
+    }
+  }
+}
+
+.alert-shadow {
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+
+  .shadow-content {
+    width: 551rem/$baseFontSize;
+    height: 584rem/$baseFontSize;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 300rem/$baseFontSize;
+
+    .shadow-img {
+      width: 475rem/$baseFontSize;
+      height: 541rem/$baseFontSize;
+      border-radius: 30rem/$baseFontSize;
+      background: url("../../assets/image/details/alert-award.png") no-repeat center / cover;
+      margin: 0 auto;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -237rem/$baseFontSize;
+      text-align: center;
+      color: #fff;
+
+      .cancel {
+        height: 60rem/$baseFontSize;
+        width: 60rem/$baseFontSize;
+        position: absolute;
+        left: 50%;
+        margin-left: -30rem/$baseFontSize;
+        bottom: -120rem/$baseFontSize;
+        margin-top: -20rem/$baseFontSize;
+        margin-right: -20rem/$baseFontSize;
+      }
+
+      .title {
+        margin-top: 260rem/$baseFontSize;
+        color: #fff;
+        font-size: 40rem/$baseFontSize;
+        font-weight: bold;
+      }
+
+      .word {
+        margin-top: 20rem/$baseFontSize;
+      }
+
+      .button {
+        width: 440rem/$baseFontSize;
+        height: 100rem/$baseFontSize;
+        margin: 0 auto;
+        margin-top: 30rem/$baseFontSize;
+        background: url("../../assets/image/details/button.png") no-repeat center / cover;
+        line-height: 80rem/$baseFontSize;
+        font-size: 34rem/$baseFontSize;
+        color: rgb(89, 46, 18);
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.get-shadow {
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+
+  .shadow-content {
+    width: 483rem/$baseFontSize;
+    height: 584rem/$baseFontSize;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 300rem/$baseFontSize;
+
+    .shadow-img {
+
+      width: 484rem/$baseFontSize;
+      height: 509rem/$baseFontSize;
+      border-radius: 30rem/$baseFontSize;
+      background: url("../../assets/image/welfare/get-center.png") no-repeat center / cover;
+      margin: 0 auto;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -242rem/$baseFontSize;
+      text-align: center;
+      color: #000000;
+
+      .successsub {
+        margin-top: 200rem/$baseFontSize;
+        font-size: 40rem/$baseFontSize;
+        font-weight: bold;
+      }
+
+      .word1 {
+        font-size: 24rem/$baseFontSize;
+        color: #9A9A9A;
+        margin-top: 30rem/$baseFontSize;
+      }
+
+      .word2 {
+        font-size: 24rem/$baseFontSize;
+        color: #9A9A9A;
+      }
+
+      .sub-button {
+        width: 100%;
+        text-align: center;
+        margin-top: 40rem/$baseFontSize;
+
+        .vanbutton {
+          margin: 0 auto;
+          background: #fd6266;
+          border-radius: 45rem/$baseFontSize;
+          border: 0;
+          color: #fff;
+          font-size: 26rem/$baseFontSize;
+          width: 370rem/$baseFontSize;
+          height: 75rem/$baseFontSize;
+          line-height: 75rem/$baseFontSize;
+        }
+      }
+
+      .cancel {
+        height: 60rem/$baseFontSize;
+        width: 60rem/$baseFontSize;
+        position: absolute;
+        left: 50%;
+        margin-left: -30rem/$baseFontSize;
+        bottom: -120rem/$baseFontSize;
+        margin-top: -20rem/$baseFontSize;
+        margin-right: -20rem/$baseFontSize;
+      }
+    }
+  }
+}
+
+
+
+.missshadow {
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+
+  .shadow-content {
+    width: 484rem/$baseFontSize;
+    height: 584rem/$baseFontSize;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 300rem/$baseFontSize;
+
+    .shadow-img {
+
+      width: 484rem/$baseFontSize;
+      height: 518rem/$baseFontSize;
+      border-radius: 30rem/$baseFontSize;
+      background: url("../../assets/image/welfare/miss.png") no-repeat center / cover;
+      margin: 0 auto;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -242rem/$baseFontSize;
+      text-align: center;
+      color: #000000;
+
+      .successsub {
+        margin-top: 250rem/$baseFontSize;
+        font-size: 40rem/$baseFontSize;
+        font-weight: bold;
+      }
+
+      .word1 {
+        font-size: 24rem/$baseFontSize;
+        color: #9A9A9A;
+        margin-top: 20rem/$baseFontSize;
+      }
+
+      .sub-button {
+        width: 100%;
+        text-align: center;
+        margin-top: 50rem/$baseFontSize;
+
+        .vanbutton {
+          margin: 0 auto;
+          background: #FF5052;
+          border-radius: 45rem/$baseFontSize;
+          border: 0;
+          color: #fff;
+          font-size: 26rem/$baseFontSize;
+          width: 370rem/$baseFontSize;
+          height: 75rem/$baseFontSize;
+          line-height: 75rem/$baseFontSize;
+        }
+      }
+
+      .cancel {
+        height: 60rem/$baseFontSize;
+        width: 60rem/$baseFontSize;
+        position: absolute;
+        left: 50%;
+        margin-left: -30rem/$baseFontSize;
+        bottom: -120rem/$baseFontSize;
+        margin-top: -20rem/$baseFontSize;
+        margin-right: -20rem/$baseFontSize;
+      }
+    }
+  }
+}
+
+.go-home {
+  position: fixed;
+  top: 40%;
+  right: 30rem/$baseFontSize;
+  z-index: 998;
+  width: 84rem/$baseFontSize;
+  height: 84rem/$baseFontSize;
+  border-radius: 50%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 1);
+  opacity: 0.6;
+  color: #fff;
+  font-size: 16rem/$baseFontSize;
+  text-align: center;
+
+  img {
+    width: 30rem/$baseFontSize;
+    height: 30rem/$baseFontSize;
+    margin-top: 10rem/$baseFontSize;
+  }
+}
+
+.popGuige {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 20rem/$baseFontSize 20rem/$baseFontSize 0 0;
+  height: 832rem/$baseFontSize;
+
+  .popBox {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow-y: scroll;
+    max-height: 700rem/$baseFontSize;
+  }
+
+  .poptitlebox {
+    flex: 0 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 40rem/$baseFontSize;
+    padding-top: 40rem/$baseFontSize;
+    padding-right: 40rem/$baseFontSize;
+
+    .popTitle {
+      display: inline-block;
+      font-size: 30rem/$baseFontSize;
+    }
+
+    .fenge {
+      width: 100%;
+      height: 1px;
+      background: #EAEAEA;
+      margin-top: 33rem/$baseFontSize;
+    }
+
+    .popup-close {
+      position: absolute;
+      right: 30rem/$baseFontSize;
+      top: 44rem/$baseFontSize;
+      width: 28rem/$baseFontSize;
+      height: 28rem/$baseFontSize;
+      background: url(../../assets/image/close_icon.png) center center;
+      background-size: 100% 100%;
+    }
+  }
+
+  .popImgBox {
+    padding: 0rem/$baseFontSize 30rem/$baseFontSize 0rem/$baseFontSize;
+    display: flex;
+    position: relative;
+
+    .popImg {
+      min-width: 220rem/$baseFontSize;
+      max-width: 220rem/$baseFontSize;
+      width: 220rem/$baseFontSize;
+      height: 148rem/$baseFontSize;
+      border-radius: 8px;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    .popGuigeTitle {
+
+      margin-left: 12rem/$baseFontSize;
+
+      .popprice {
+        color: #d80000;
+        font-size: 32rem/$baseFontSize;
+      }
+
+      .kucun {
+        color: #979797;
+        font-size: 22rem/$baseFontSize;
+      }
+
+      .yixuan {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+
+  .popContent {
+    padding: 40rem/$baseFontSize 30rem/$baseFontSize 150rem/$baseFontSize;
+    overflow: auto;
+    /*<!--max-height: 400rem/$baseFontSize;-->*/
+    .flexBox {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .contentTitle {
+      font-size: 28rem/$baseFontSize;
+      color: #1e1e1e;
+    }
+
+    .guigeBox {
+      margin-top: 22rem/$baseFontSize;
+      margin-right: 20rem/$baseFontSize;
+
+      .guigetext {
+        display: inline-block;
+        border-radius: 5px;
+        font-size: 24rem/$baseFontSize;
+        color: #1e1e1e;
+        text-align: left;
+        line-height: 54rem/$baseFontSize;
+        height: 54rem/$baseFontSize;
+        padding: 0 20rem/$baseFontSize;
+        background: #f0f0f0;
+      }
+
+      .selectguigetext {
+        display: inline-block;
+        border-radius: 5px;
+        font-size: 24rem/$baseFontSize;
+        color: #19b39d;
+        text-align: left;
+        line-height: 54rem/$baseFontSize;
+        height: 54rem/$baseFontSize;
+        padding: 0 20rem/$baseFontSize;
+        background: #e0f3d6;
+      }
+
+      .selectguigetextno {
+        display: inline-block;
+        border-radius: 5px;
+        font-size: 24rem/$baseFontSize;
+        color: #979797;
+        text-align: center;
+        line-height: 54rem/$baseFontSize;
+        height: 54rem/$baseFontSize;
+        padding: 0 20rem/$baseFontSize;
+        background: #f0f0f0;
+      }
+
+    }
+
+    .goumaiBox {
+      margin-top: 22rem/$baseFontSize;
+
+      .inputAdd {
+        .spanText {
+          display: inline-block;
+          vertical-align: middle;
+          height: 30px;
+          width: 30px;
+          line-height: 30px;
+          text-align: center;
+          background: #f0f0f0;
+          border-radius: 4px;
+          font-size: 16px;
+        }
+
+        .countValue {
+          display: inline-block;
+          height: 30px;
+          width: 50px;
+          line-height: 30px;
+          text-align: center;
+          background: #f0f0f0;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+
+  .submitOrderBox {
+    flex: 0 0 auto;
+    width: 100%;
+    background: #fff;
+    height: 120rem/$baseFontSize;
+
+    .submitOrder {
+      background: #19b39d;
+      height: 70rem/$baseFontSize;
+      line-height: 70rem/$baseFontSize;
+      text-align: center;
+      width: 80%;
+      color: #fff;
+      margin: 25rem/$baseFontSize auto;
+      border-radius: 36rem/$baseFontSize;
+    }
+  }
+
+}
+
+.fxj-provide {
+  width: 100%;
+  font-size: 22rem/$baseFontSize;
+  text-align: center;
+  padding-top: 38rem/$baseFontSize;
+  padding-bottom: 100rem/$baseFontSize;
+  color: #999999;
+}
+
+.go-center {
+  font-size: 26ren/$baseFontSize;
+  color: #999999;
+  margin-top: 80rem/$baseFontSize;
+}
+
+.follow {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+
+  .follow-tip {
+    width: 336rem/$baseFontSize;
+    height: 336rem/$baseFontSize;
+    margin: 0 auto;
+    margin-top: 200rem/$baseFontSize;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .re-word {
+    font-size: 40rem/$baseFontSize;
+    margin-top: 50rem/$baseFontSize;
+    font-weight: 500;
+  }
+
+  .follow-word1 {
+    font-size: 33rem/$baseFontSize;
+    margin-top: 55rem/$baseFontSize;
+    font-weight: 500;
+  }
+
+  .follow-word2 {
+    font-size: 33rem/$baseFontSize;
+    margin-top: 20rem/$baseFontSize;
+    font-weight: 500;
+  }
+
+  ul {
+    margin-top: 40rem/$baseFontSize;
+    width: 100%;
+
+    li {
+      width: 400rem/$baseFontSize;
+      text-align: left;
+      margin: 0 auto;
+      margin-bottom: 30rem/$baseFontSize;
+      font-size: 28rem/$baseFontSize;
+    }
+  }
+}
+
+/deep/ .van-field__error-message {
+  color: red;
+}
+
+/deep/ .van-field__control {
+  width: 120%;
+  border: none;
+}
+
+/deep/ .van-field__error-message {
+  display: none;
+}
+/deep/ .van-cell {
+  width: 64%;
+  padding: 0 16rem/$baseFontSize;
+}
+
+
+
+.swiper-content {
+  width: 100%;
+  padding-top: 100%;
+  height: 0;
+  position: relative;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+
+  .swiper-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    .swiper-slide {
+      text-align: center;
+      background-size: cover;
+      background-color: rgba(255, 255, 255, 0);
+      width: 100%;
+      height: 100%;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .banner {
+      width: 100%;
+      height: 100%;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.shadow {
+  width: 100%;
+  height: 100%;
+  background: #333333;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.is-over {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  top: 50%;
+  left: 50%;
+  margin-left: -20%;
+  margin-top: -20%;
+
+}
+
+.limit-tiaofu {
+  position: absolute;
+  top: 100rem/$baseFontSize;
+  z-index: 1000;
+  opacity: 0.5;
+
+  border-top-left-radius: 0rem/$baseFontSize;
+  border-top-right-radius: 29rem/$baseFontSize;
+  border-bottom-left-radius: 0rem/$baseFontSize;
+  border-bottom-right-radius: 29rem/$baseFontSize;
+
+  background: #000000;
+  width: 275rem/$baseFontSize;
+  height: 60rem/$baseFontSize;
+  line-height: 60rem/$baseFontSize;
+  color: #fff;
+  text-align: center;
+}
+.form-shadow {
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+
+  .van-form {
+    margin-left: 17rem/$baseFontSize;
+  }
+
+  .formlabel {
+    width: 1.6rem;
+    position: relative;
+    text-align: right;
+  }
+
+  .form-line {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 25rem/$baseFontSize;
+    display: flex;
+    background-color: #fff;
+    color: #333333;
+    height: 50rem/$baseFontSize;
+    line-height: 50rem/$baseFontSize;
+    border-radius: 5px;
+    font-size: 24rem/$baseFontSize;
+  }
+
+  .form-line-tet {
+    width: 85%;
+    word-break: break-all;
+    margin: 0 auto;
+    margin-top: 25rem/$baseFontSize;
+    display: flex;
+    background-color: #fff;
+    color: #333333;
+    height: 120rem/$baseFontSize;
+    line-height: 50rem/$baseFontSize;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 24rem/$baseFontSize;
+
+    label {
+      width: 150rem/$baseFontSize;
+      position: relative;
+      right: 13rem/$baseFontSize;
+    }
+
+    .van-cell {
+      border: none;
+    }
+  }
+
+  .shadow-content {
+    width: 551rem/$baseFontSize;
+    height: 584rem/$baseFontSize;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 100rem/$baseFontSize;
+
+    .shadow-img {
+      width: 551rem/$baseFontSize;
+      height: 843rem/$baseFontSize;
+      border-radius: 30rem/$baseFontSize;
+      background: url("../../assets/image/welfare/ware-form.png") no-repeat center / cover;
+      margin: 0 auto;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -275rem/$baseFontSize;
+      text-align: center;
+      color: #fff;
+
+      .cancel {
+        height: 60rem/$baseFontSize;
+        width: 60rem/$baseFontSize;
+        position: absolute;
+        right: 20rem/$baseFontSize;
+        margin-left: -30rem/$baseFontSize;
+        top: 140rem/$baseFontSize;
+        margin-top: -20rem/$baseFontSize;
+        margin-right: -20rem/$baseFontSize;
+      }
+
+      .title {
+        margin-top: 269rem/$baseFontSize;
+        color: #fff;
+        font-size: 34rem/$baseFontSize;
+        font-weight: bold;
+      }
+
+      .word {
+        margin-top: 20rem/$baseFontSize;
+      }
+
+      .button {
+        width: 440rem/$baseFontSize;
+        height: 100rem/$baseFontSize;
+        margin: 0 auto;
+        margin-top: 50rem/$baseFontSize;
+        background: url("../../assets/image/details/button.png") no-repeat center / cover;
+        line-height: 80rem/$baseFontSize;
+        font-size: 34rem/$baseFontSize;
+        color: rgb(89, 46, 18);
+        font-weight: bold;
+      }
+    }
+  }
+
+  .vanbutton {
+    margin: 0 auto;
+    background: rgb(243, 173, 75);
+    border-radius: 45rem/$baseFontSize;
+    border: 0;
+    color: #5E2A0A;
+    font-size: 28rem/$baseFontSize;
+    width: 85%;
+    margin-top: 40rem/$baseFontSize;
+    height: 70rem/$baseFontSize;
+  }
+
+  .form-title1 {
+    font-size: 32rem/$baseFontSize;
+    color: #fff;
+    margin-top: 230rem/$baseFontSize;
+  }
+
+  .form-title2 {
+    font-size: 32rem/$baseFontSize;
+  }
+}
+
+.joincontent {
+  margin-bottom: 25rem/$baseFontSize;
+}
+
+.fenjie {
+  width: 100%;
+  height: 25rem/$baseFontSize;
+  background: #f8f8f8;
+}
+
+.apart-rule {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+
+  .rule {
+    font-size: 28rem/$baseFontSize;
+    color: #5C5C5C;
+  }
+}
+
+.join-button {
+  width: 306rem/$baseFontSize;
+  height: 296rem/$baseFontSize;
+  background: url("../../assets/image/welfare/mashangjoin.gif");
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 4.1rem;
+  color: #fff;
+  font-size: 34rem/$baseFontSize;
+  font-weight: 500;
+}
+
+.margerBottom38 {
+  margin-bottom: 20rem/$baseFontSize;
+}
+
+.fontSize30 {
+  font-size: 40rem/$baseFontSize;
+}
+
+.resultStyle {
+}
+
+.bottom {
+  width: 100%;
+  height: 110rem/$baseFontSize;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  padding: 0 20rem/$baseFontSize;
+  display: flex;
+  box-sizing: border-box;
+  border-top: 1px solid #F3F3F3;
+  align-items: center;
+  .bottomleft {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    height: 75%;
+    margin-right: 50rem/$baseFontSize;
+    .shouye {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .imghose {
+      height: 41rem/$baseFontSize;
+      width: 41rem/$baseFontSize;
+      margin: 0 auto;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    .imgshare {
+      height: 40rem/$baseFontSize;
+      width: 40rem/$baseFontSize;
+      margin: 0 auto;
+    }
+    .imgkefu {
+      height: 42rem/$baseFontSize;
+      width: 50rem/$baseFontSize;
+      margin: 0 auto;
+    }
+
+    .bottomword {
+      text-align: center;
+      font-size: 23rem/$baseFontSize;
+      color: #353535;
+    }
+  }
+  .bottomright {
+    width: 380rem/$baseFontSize;
+    .start {
+      background: #54B09E;
+      width: 100%;
+      height: 80rem/$baseFontSize;
+      text-align: center;
+      border-radius: 46rem/$baseFontSize;
+      overflow: hidden;
+      color: white;
+      font-size: 28rem/$baseFontSize;
+      display: flex;
+      font-weight: bold;
+      .sharebutton {
+        flex: 1;
+        height: 100%;
+        line-height: 80rem/$baseFontSize;
+        background: #fd6266;
+      }
+
+      .showmore {
+        flex: 1;
+        height: 100%;
+        line-height: 80rem/$baseFontSize;
+      }
+    }
+  }
+}
+
+/deep/ .swiper-pagination-bullet {
+  width: 7rem/$baseFontSize;
+  height: 7rem/$baseFontSize;
+  border-radius: 50%;
+  background: #fd6266;
+}
+/deep/ .swiper-pagination-bullets{
+  top: 90%;
+  bottom: 0;
+}
+/deep/ .swiper-container{
+  height: 100%;
+}

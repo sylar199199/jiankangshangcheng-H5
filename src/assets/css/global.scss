@@ -1,0 +1,478 @@
+@charset "utf-8";
+$bgcolor: #D51E12;
+$fontFamily: pingfangSC,
+Arial,
+Helvetica,
+sans-serif;
+$fontColor: #fff;
+$bgtc: #ECECEC;
+$baseFontSize: 75;
+// 商品样式
+.listGoodsImg {
+  width: 220rem/$baseFontSize;
+  height: 220rem/$baseFontSize;
+  border-radius: 25rem/$baseFontSize;
+  background: #f3f3f3;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.yuan {
+  font-size: 24rem/$baseFontSize;
+}
+
+.title-word {
+  font-size: 29rem/$baseFontSize;
+  font-weight: 600;
+}
+
+.sell-point {
+  color: #999999;
+  font-size: 24rem/$baseFontSize;
+}
+
+.high-price {
+  color: #999999;
+  font-size: 22rem/$baseFontSize;
+  text-decoration: line-through;
+  margin-left: 2rem/$baseFontSize;
+}
+
+.low-price {
+  color: #fd6266;
+  font-weight: bold;
+  font-size: 36rem/$baseFontSize;
+}
+
+.container {
+  /*padding: 0 0 60px;*/
+  margin-top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentBox {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow-y: scroll;
+  height: 200px;
+}
+
+/*字体颜色*/
+.color999 {
+  color: #999999;
+}
+.color333 {
+  color: #333333;
+}
+.colorfd6266 {
+  color: #fd6266;
+}
+
+.colorWhite {
+  color: #ffffff;
+}
+
+.colorBlack {
+  color: #000000;
+}
+
+.bcWhite {
+  background: #ffffff;
+}
+
+.colorSuccess {
+  color: #1db29d;
+}
+
+.colorThemeGreen {
+  color: #1db29d;
+}
+
+.colorThemeRed {
+  color: #fd6266;
+}
+
+.bcThemeGreen {
+  background: #1db29d;
+}
+
+.bcThemeRed {
+  background: #fd6266;
+}
+.awardBc{
+  background-image: linear-gradient(to right, rgb(233,96,61) , rgb(231,71,55));
+}
+.bcThemeGray {
+  background: #c9c9c9;
+}
+
+.color666 {
+  color: #666666;
+}
+
+.fontweight {
+  font-weight: bold;
+}
+
+/*felx方式*/
+.alignCenter {
+  align-items: center;
+}
+.alignend{
+  align-items: flex-end;
+}
+
+.textCenter{
+  text-align: center;
+}
+.flexColumn {
+  flex-direction: column;
+}
+
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+.spaceCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.flexAroud {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.flexStart {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.flex {
+  display: flex;
+}
+.flexClomn {
+  flex-direction: column;
+}
+.displayinlineBlock{
+  display: inline-block;
+}
+
+.payButton {
+  width: 320rem/$baseFontSize;
+  height: 90rem/$baseFontSize;
+  line-height: 90rem/$baseFontSize;
+  text-align: center;
+  border-radius: 46rem/$baseFontSize;
+}
+
+.button-common {
+  width: 158rem/$baseFontSize;
+  height: 70rem/$baseFontSize;
+  line-height: 70rem/$baseFontSize;
+  border-radius: 34rem/$baseFontSize;
+  text-align: center;
+  font-size: 26rem/$baseFontSize;
+}
+
+.button-common-new {
+  width: 156rem/$baseFontSize;
+  height: 60rem/$baseFontSize;
+  line-height: 60rem/$baseFontSize;
+  border-radius: 34rem/$baseFontSize;
+  text-align: center;
+  font-size: 26rem/$baseFontSize;
+}
+
+.button-common-white-new {
+  width: 148rem/$baseFontSize;
+  height: 58rem/$baseFontSize;
+  line-height: 62rem/$baseFontSize;
+  border-radius: 34rem/$baseFontSize;
+  text-align: center;
+  font-size: 26rem/$baseFontSize;
+}
+
+.button-common-white {
+  width: 156rem/$baseFontSize;
+  height: 68rem/$baseFontSize;
+  line-height: 68rem/$baseFontSize;
+  border-radius: 34rem/$baseFontSize;
+  text-align: center;
+  font-size: 26rem/$baseFontSize;
+}
+
+.button-red {
+  color: #fff;
+  background: #fd6266;
+}
+
+.button-white {
+  color: #fd6266;
+  background: #fff;
+  border: 1px solid #fd6266;
+}
+
+.button-gray {
+  color: #fff;
+  background: #999999;
+}
+
+/**
+间距
+ */
+.marginbottom30 {
+  margin-bottom: 30rem/$baseFontSize;
+}
+
+.marginLeft30 {
+  margin-left: 30rem/$baseFontSize;
+}
+
+.marginLeft20 {
+  margin-left: 20rem/$baseFontSize;
+}.marginLeft15 {
+  margin-left: 15rem/$baseFontSize;
+}
+.marginLeft10 {
+  margin-left: 10rem/$baseFontSize;
+}
+.marginLeft5 {
+  margin-left: 5rem/$baseFontSize;
+}
+
+.marginLeft25 {
+  margin-left: 25rem/$baseFontSize;
+}
+
+.marginTop30 {
+  margin-top: 30rem/$baseFontSize;
+}
+.marginTop35 {
+  margin-top: 35rem/$baseFontSize;
+}
+.marginTop40 {
+  margin-top: 40rem/$baseFontSize;
+}
+.marginTop80 {
+  margin-top: 40rem/$baseFontSize;
+}
+
+.marginTop20 {
+  margin-top: 20rem/$baseFontSize;
+}
+.marginTop25 {
+  margin-top: 25rem/$baseFontSize;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.paddingX20 {
+  padding: 0 20rem/$baseFontSize;
+  box-sizing: border-box;
+}.paddingX40 {
+  padding: 0 40rem/$baseFontSize;
+  box-sizing: border-box;
+}
+.paddingX30 {
+  padding: 0 30rem/$baseFontSize;
+  box-sizing: border-box;
+}
+
+.bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  box-shadow: 0px 0px 15px 6px rgba(209, 209, 209, 0.25);
+  text-align: center;
+  width: 100%;
+  height: 92rem/$baseFontSize;
+  z-index: 3;
+
+  .iconContent {
+    margin-top: 9rem/$baseFontSize;
+    height: 76rem/$baseFontSize;
+  }
+
+  .iconBox {
+    color: #999dab;
+    font-size: 19rem/$baseFontSize;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .icon {
+      margin: 0 auto;
+      width: 55rem/$baseFontSize;
+      height: 44rem/$baseFontSize;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .select {
+      color: #1db29d;
+      font-size: 19rem/$baseFontSize;
+    }
+
+    .noselect {
+
+    }
+
+    p {
+      margin-top: 10rem/$baseFontSize;
+      color: #d6d8de;
+    }
+  }
+}
+
+
+/*背景颜色*/
+.bcSuccsee {
+  background: #1db29d;
+}
+
+.bcCancel {
+  background: #c1c1c1;
+}
+
+.bcInfo {
+  color: #9e9e9e;
+}
+
+.bcError {
+  background: #fd6266;
+}
+
+.mashangqiangButton {
+  width: 158rem/$baseFontSize;
+  height: 70rem/$baseFontSize;
+  font-size: 27rem/$baseFontSize;
+  line-height: 70rem/$baseFontSize;
+  border-radius: 34rem/$baseFontSize;
+  text-align: center;
+}
+.yishouxinButton {
+  width: 158rem/$baseFontSize;
+  height: 70rem/$baseFontSize;
+  font-size: 27rem/$baseFontSize;
+  line-height: 70rem/$baseFontSize;
+  border-radius: 34rem/$baseFontSize;
+  text-align: center;
+}
+
+/* 轮播样式*/
+.swiper-content {
+  width: 100%;
+  padding-top: 100%;
+  height: 0;
+  position: relative;
+
+  .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+
+    .swiper-inner {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      /*<!--bottom: 24rem/$baseFontSize;-->*/
+      .swiper-slide {
+        text-align: center;
+        background-size: cover;
+        background-color: rgba(255, 255, 255, 0);
+        width: 100%;
+        height: 100%;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .banner {
+        width: 100%;
+        height: 100%;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    /deep/ .swiper-pagination-bullet {
+      width: 7rem/$baseFontSize;
+      height: 7rem/$baseFontSize;
+      border-radius: 50%;
+      background: #fd6266;
+    }
+
+    /deep/ .swiper-pagination-bullets {
+      top: 90%;
+      bottom: 0;
+    }
+
+    /deep/ .swiper-container {
+      height: 100%;
+    }
+  }
+
+}
+
+.imgkefu {
+  height: 46rem/$baseFontSize;
+  width: 46rem/$baseFontSize;
+  margin: 0 auto;
+  position: relative;
+  top: -2rem/$baseFontSize
+}
+
+.imgshare {
+  height: 39rem/$baseFontSize;
+  width: 39rem/$baseFontSize;
+  margin: 0 auto;
+}
+.imghose {height: 41rem/$baseFontSize;width: 41rem/$baseFontSize;margin: 0 auto;}
+/*头像*/ .tongxiangImg{width: 64rem/$baseFontSize;height: 64rem/$baseFontSize;border-radius: 50%;overflow: hidden; img{width: 100%;height: 100%;} }
+/*分享家提供*/
+.fxj-provide {
+  width: 100%;
+  font-size: 22rem/$baseFontSize;
+  text-align: center;
+  margin-top: 38rem/$baseFontSize;
+  padding-top: 10rem/$baseFontSize;
+  padding-bottom: 140rem/$baseFontSize;
+  color: #999999;
+}
+.xiangyou{
+  width: 15rem/$baseFontSize;
+  height: 22rem/$baseFontSize;
+}
+.opacity5 {
+  opacity: 0.5;
+}

@@ -1,0 +1,301 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow-y: scroll;
+
+  .huodongtu {
+    width: 100%;
+    height: 720rem/$baseFontSize;
+    background: url("../../assets/image/seckill/miashaBc.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .guizebox {
+    width: 700rem/$baseFontSize;
+    height: 580rem/$baseFontSize;
+    margin: 0 auto;
+    background: url("../../assets/image/seckill/guizebeijing.png") no-repeat;
+    background-size: contain;
+    margin-top: -1.26667rem;
+
+    .topbox {
+      width: 100%;
+      height: 100rem/$baseFontSize;
+
+      .touxiang {
+        width: 62rem/$baseFontSize;
+        height: 62rem/$baseFontSize;
+        border-radius: 50%;
+      }
+
+      .numbc {
+        display: inline-block;
+        width: 35rem/$baseFontSize;
+        height: 35rem/$baseFontSize;
+        line-height: 35rem/$baseFontSize;
+        border-radius: 10rem/$baseFontSize;
+      }
+
+      .mingxibutton {
+        width: 160rem/$baseFontSize;
+        height: 50rem/$baseFontSize;
+        line-height: 50rem/$baseFontSize;
+        background: #ffbf3b;
+        border-radius: 26rem/$baseFontSize;
+        color: #890404;
+
+        img {
+          width: 10rem/$baseFontSize;
+          height: 16rem/$baseFontSize;
+        }
+      }
+    }
+
+  }
+
+  .neirongBox {
+    padding: 0 40rem/$baseFontSize;
+    padding-top: 45rem/$baseFontSize;
+    padding-bottom: 45rem/$baseFontSize;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .titlewz {
+      color: #4b4b4b;
+    }
+
+    .inviteBT {
+      width: 610rem/$baseFontSize;
+      height: 80rem/$baseFontSize;
+      line-height: 80rem/$baseFontSize;
+      border-radius: 45rem/$baseFontSize;
+    }
+  }
+
+  .jili {
+    width: 580rem/$baseFontSize;
+    margin: 0 auto;
+    margin-top: 30rem/$baseFontSize;
+  }
+
+  .goodsBox {
+    width: 100%;
+    padding: 0 35rem/$baseFontSize;
+    box-sizing: border-box;
+    padding-bottom: 100rem/$baseFontSize;
+
+    .goodsitem {
+      width: 100%;
+      padding: 15rem/$baseFontSize;
+      padding-right: 20rem/$baseFontSize;
+      box-sizing: border-box;
+      border-radius: 26rem/$baseFontSize;
+      margin-bottom: 35rem/$baseFontSize;
+      .lefttu{
+        width: 243rem/$baseFontSize;
+        height: 243rem/$baseFontSize;
+        border-radius: 26rem/$baseFontSize;
+        overflow: hidden;
+        position: relative;
+        .gosimg {
+          display: inline-block;
+          width: 100%;
+          height:100%;
+        }
+        .shadow {
+          width: 100%;
+          height: 100%;
+          background: #333333;
+          opacity: 0.5;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+
+        .is-over {
+          position: absolute;
+          width: 80%;
+          height: 80%;
+          top: 50%;
+          left: 50%;
+          margin-top: -40%;
+          margin-left: -40%;
+        }
+      }
+
+
+      .touxiang {
+        display: flex;
+        width: 38rem/$baseFontSize;
+        height: 38rem/$baseFontSize;
+        line-height: 38rem/$baseFontSize;
+        border-radius: 50%;
+        border: 4rem/$baseFontSize #ffffff solid;
+        .img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .jiagebc {
+        width: 100%;
+        height: 56rem/$baseFontSize;
+        background: url('../../assets/image/seckill/jiagebc.png') no-repeat;
+        background-size: contain;
+        padding: 10rem/$baseFontSize;
+
+        .shandian {
+          width: 180rem/$baseFontSize;
+          padding: 0 20rem/$baseFontSize;
+          box-sizing: border-box;
+          height: 52rem/$baseFontSize;
+          line-height: 52rem/$baseFontSize;
+          text-decoration: line-through;
+          background-color: #fff;
+          border-radius: 10rem/$baseFontSize;
+        }
+
+        .shanimg {
+          height: 55rem/$baseFontSize;
+          width: 34rem/$baseFontSize;
+          margin-left: -14rem/$baseFontSize;
+        }
+      }
+      .qiangguang{
+        width: 100%;
+        height: 56rem/$baseFontSize;
+        background: url('../../assets/image/seckill/xiangguang.png') no-repeat;
+        background-size: contain;
+        padding: 10rem/$baseFontSize;
+        .shandian {
+          width: 180rem/$baseFontSize;
+          padding: 0 20rem/$baseFontSize;
+          box-sizing: border-box;
+          height: 52rem/$baseFontSize;
+          line-height: 52rem/$baseFontSize;
+          text-decoration: line-through;
+          background-color: #fff;
+          border-radius: 10rem/$baseFontSize;
+          color: #b4b4b4;
+        }
+        .shanimg {
+          height: 55rem/$baseFontSize;
+          width: 34rem/$baseFontSize;
+          margin-left: -14rem/$baseFontSize;
+        }
+      }
+    }
+  }
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.block {
+  height: 486rem/$baseFontSize;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  .hezi {
+    width: 522rem/$baseFontSize;
+    height: 486rem/$baseFontSize;
+    background: url("../../assets/image/activit-h5/hezi.png") no-repeat top / cover;
+    color: #fbe3d1;
+
+    .laile {
+      position: absolute;
+      width: 300rem/$baseFontSize;
+      height: 44rem/$baseFontSize;
+      line-height: 52rem/$baseFontSize;
+      text-align: center;
+      font-size: 26rem/$baseFontSize;
+      left: 50%;
+      margin-left: -150rem/$baseFontSize;
+      bottom: 245rem/$baseFontSize;
+      color: #ffffff;
+      opacity: 0.63;
+    }
+
+    .showShadowText {
+      position: absolute;
+      width: 300rem/$baseFontSize;
+      height: 52rem/$baseFontSize;
+      line-height: 52rem/$baseFontSize;
+      text-align: center;
+      font-size: 46rem/$baseFontSize;
+      left: 50%;
+      margin-left: -150rem/$baseFontSize;
+      bottom: 170rem/$baseFontSize;
+    }
+
+    .lookother {
+      position: absolute;
+      width: 300rem/$baseFontSize;
+      height: 52rem/$baseFontSize;
+      line-height: 52rem/$baseFontSize;
+      background: #d14c45;
+      text-align: center;
+      bottom: 90rem/$baseFontSize;
+      font-size: 22rem/$baseFontSize;
+      left: 50%;
+      border-radius: 26rem/$baseFontSize;
+      margin-left: -150rem/$baseFontSize;
+    }
+  }
+
+  .bottonword {
+    position: absolute;
+    height: 96rem/$baseFontSize;
+    width: 370rem/$baseFontSize;
+    line-height: 90rem/$baseFontSize;
+    text-align: center;
+    bottom: -48rem/$baseFontSize;
+    left: 50%;
+    margin-left: -185rem/$baseFontSize;
+    background: url("../../assets/image/activit-h5/hezibutton.png") no-repeat top / cover;
+    color: #7e5855;
+    font-size: 32rem/$baseFontSize;
+  }
+}
+.xiangyou {
+  width: 11rem/$baseFontSize;
+  height: 18rem/$baseFontSize;
+}
+
+.ma20 {
+  margin-right: -10rem/$baseFontSize;
+}
+.ma202 {
+  position: relative;
+  left: 2rem/$baseFontSize;
+}
+
+
+.colorff6d46 {
+  color: #ff6d46;
+}
+
+.bcff6d46 {
+  background-color: #ff6d46;
+}
+
+.color4b4b4b {
+  color: #4b4b4b;
+}
+
+.color0e {
+  color: #0e0e0e;
+}
+.marginbottom10{
+  margin-bottom: 10rem/$baseFontSize;
+}

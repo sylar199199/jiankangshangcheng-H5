@@ -1,0 +1,216 @@
+
+.lottery-box {
+  overflow: hidden;
+}
+.lunbo{
+  width: 437rem/$baseFontSize;
+  height: 57rem/$baseFontSize;
+  position: absolute;
+  left: 50%;
+  top: -1.4rem;
+  margin-left: -220rem/$baseFontSize;
+  line-height: 57rem/$baseFontSize;
+  text-align: center;
+  overflow: hidden;
+  .itemcard {
+    width: 100%;
+    line-height: 57rem/$baseFontSize;
+    text-align: center;
+  }
+}
+.lottery {
+  overflow: hidden;
+  width: 692rem/$baseFontSize;
+  height: 763rem/$baseFontSize;
+  margin-top: 200/$baseFontSize;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 500rem/$baseFontSize;
+  left: 50%;
+  margin-left: -346rem/$baseFontSize;
+}
+
+.lottery .lottery-item {
+  height: 635rem/$baseFontSize;
+  width: 615rem/$baseFontSize;
+  position: relative;
+  margin-left: 50rem/$baseFontSize;
+  margin-top: 1.5667rem;
+
+}
+
+.lottery .lottery-item ul li {
+  width: 33.33333333%;
+  position: absolute;
+  padding-right: 10rem/$baseFontSize;
+}
+
+.lottery .lottery-item ul li:nth-child(1) {
+  width: 33.33333333%;
+}
+
+.lottery .lottery-item ul li:nth-child(2) {
+  width: 33.33333333%;
+  left: 33.33333333%;
+}
+
+.lottery .lottery-item ul li:nth-child(3) {
+  width: 33.33333333%;
+  left: 66.666666666%;
+}
+
+.lottery .lottery-item ul li:nth-child(4) {
+  left: 66.666666666%;
+  top: 205rem/$baseFontSize;
+}
+
+.lottery .lottery-item ul li:nth-child(5) {
+  left: 66.666666666%;
+  bottom: 40rem/$baseFontSize;
+}
+
+.lottery .lottery-item ul li:nth-child(6) {
+  left:33.33333333%;
+  bottom: 40rem/$baseFontSize;
+}
+
+.lottery .lottery-item ul li:nth-child(7) {
+  bottom: 40rem/$baseFontSize;
+}
+
+.lottery .lottery-item ul li:nth-child(8) {
+  top: 205rem/$baseFontSize;
+}
+
+.lottery .lottery-item ul li .box {
+  height: 186rem/$baseFontSize;
+  width: 186rem/$baseFontSize;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  background: url("../../assets/image/welfare/grid/9gongbg2.png") no-repeat;
+  background-size: contain;
+}
+
+.lottery .lottery-item ul li .box img {
+  display: block;
+  height: 90rem/$baseFontSize;
+  width: 90rem/$baseFontSize;
+  margin: 0 auto;
+  margin-top: 20rem/$baseFontSize;
+  margin-bottom: 5rem/$baseFontSize;
+}
+
+
+.lottery .lottery-item ul li .box p {
+  color: #874e2c;
+  padding-left: 5rem/$baseFontSize;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 24rem/$baseFontSize;
+  margin-top: 10rem/$baseFontSize;
+}
+
+.lottery .lottery-item ul li.on .box {
+  background: url("../../assets/image/welfare/grid/bg1.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.lottery .lottery-item ul li.on .box p {
+  color: #fff;
+}
+
+.lottery .lottery-item .lottery-start {
+  position: absolute;
+  width: 33.33333333%;
+  left: 33.33333333%;
+  top: 205rem/$baseFontSize;
+  padding-right: 10rem/$baseFontSize;
+}
+
+.lottery .lottery-item .lottery-start .box {
+  height: 186rem/$baseFontSize;
+  color: 186rem/$baseFontSize;
+  background-size: contain;
+  position: relative;
+}
+
+.lottery .lottery-item .lottery-start .box:active {
+  opacity: 0.7;
+}
+
+.lottery .lottery-item .lottery-start .box.gray {
+  background: url("../../assets/image/welfare/grid/bg3.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.lottery .lottery-item .lottery-start .box.gray p {
+  color: #708ABF;
+  font-weight: bold;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  overflow: hidden;
+  z-index: 222;
+  top: 0;
+  left: 0;
+}
+
+.lottery-alert {
+  max-width: 400rem/$baseFontSize;
+  text-align: center;
+  z-index: 10000;
+  border-radius: 10rem/$baseFontSize;
+  background: #fff;
+  padding: 20rem/$baseFontSize;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lottery-alert h1 {
+  font-size: 18rem/$baseFontSize;
+  font-weight: bold;
+  color: #D92B2F;
+}
+
+.lottery-alert img {
+  display: block;
+  height: 120rem/$baseFontSize;
+  margin: 0 auto;
+}
+
+.lottery-alert h2 {
+  font-weight: normal;
+  color: #D92B2F;
+  font-size: 15rem/$baseFontSize;
+  padding-top: 15rem/$baseFontSize;
+}
+
+.lottery-alert p {
+  color: #666;
+  font-size: 16rem/$baseFontSize;
+  padding-top: 5rem/$baseFontSize;
+}
+
+.lottery-alert .btnsave {
+  border-radius: 3rem/$baseFontSize;
+  box-shadow: none;
+  height: 40rem/$baseFontSize;
+  cursor: pointer;
+  line-height: 40rem/$baseFontSize;
+  color: #fff;
+  margin-top: 12rem/$baseFontSize;
+  background: linear-gradient(180deg, rgba(213, 60, 63, 1) 0%, rgba(201, 20, 24, 1) 100%);
+  font-size: 16rem/$baseFontSize;
+}
